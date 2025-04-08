@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/country.css">
+    <!-- import font awsome and jquery from cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>السعودية</title>
+</head>
+<body>
+    <div class="main-container" style="direction: rtl;">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../images/logo.svg" alt="logo for website">
+            </div>
+            <div class="bars-container">
+                <button><i class="fas fa-bars"></i></button>
+            </div>
+            <ul class="navbar-list">
+                <li><a  href="#home">الصفحة الرئيسية</a></li>
+                <li><a class="active" href="#destinations">وجهات السفر</a></li>
+                <li><a href="../index.html#about">من نحن</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html" >الصفحة الرئيسية</a></li>
+                <li><a href="#destinations" class="active">وجهات السفر</a></li>
+                <li><a href="../index.html#about">من نحن</a></li>
+    
+            </ul>
+         </div>
+         <section class="gallery">
+           <img class="image right" src="../images/view/img1.jpeg" alt="">
+           <img class="image top-left" src="../images/view/img2.jpeg" alt="">
+           <img class="image bottom-left" src="../images/view/img3.jpeg" alt="">
+         </section>
+        <section class="description">
+           <h1 class="title">السعودية</h1>
+           <p>اكتشف سحر المملكة العربية السعودية، من أطهر بقاع الأرض في مكة والمدينة إلى المغامرات الصحراوية في العلا، والنهضة العصرية في الرياض وجدة.</p>
+        <h2 class="sub-title"> أماكن لا تفوّت:</h2>
+        <ul class="places">
+            <li>مكة المكرمة: قبلة المسلمين ومكان الحج.</li>
+            <li>المدينة المنورة: المدينة التي تحتضن المسجد النبوي.</li>
+            <li>العلا: مدينة التاريخ والتراث.</li>
+            <li>الرياض: العاصمة الحديثة والمزدهرة.</li>
+            <li>جدة: مدينة البحر الأحمر والثقافة.</li>
+        </ul>
+        </section>
+    
+    </div>
+    <footer>
+        <header>
+            <p>سافر، استكشف، واستمتع بكل لحظة!</p>
+            <p>نحن هنا لجعل رحلاتك أسهل، أمتع، وأكثر إلهامًا، من التخطيط وحتى العودة، لأن كل رحلة تستحق أن تكون تجربة لا تُنسى</p>
+        </header>
+        <section class="footer-sections">
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="../images/logo.svg" alt="logo for website">
+                </div>
+              
+            </div>
+            <div class="menu-section">
+              
+                <div title="contact us" class="contact">
+                    <p>تواصل معنا</p>
+                    <div>
+                        <span>+20123456789</span>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <div class="copyright">
+        <p >copyright &copy; 2025</p>
+       </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('.bars-container button').click(function() {
+                $('.menu').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>

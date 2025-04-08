@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+a {
+     text-decoration: none;
+     color: black;
+}
+ul.navbar-list {
+    list-style: none;
+    display: flex;
+ 
+}
+ul li{
+    padding: 15px;
+}
+/* menu */
+.menu{
+    display: none;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.bars-container{
+    display: none;
+}
+.bars-container button{
+    all: initial;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+a.active{
+    color: #386ABF;
+}
+.cards{
+    display: grid;
+    margin-top: 55px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 10px;
+    place-items: center;
+    
+}
+.cards .card {
+    width: 250px;
+}
+.cards .card img{
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+.cards .card .content p.title{
+    font-size: 24px;
+}
+.cards .card .buttons a:nth-child(1){
+    background-color: #386ABF;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.cards .card .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards .card .buttons a:nth-child(2){
+    color: #386ABF;
+    border: 1.5px solid #386ABF;
+    padding: 5px 20px;
+}
+.header {
+    margin-right: 36px;
+}
+/* footet style */
+footer{
+    background-color: #386ABF;
+    color: white;
+    margin-top: 50px;
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    padding-bottom: 10px;
+    padding-top: 50px;
+}
+footer header {
+    margin-right: 35px;
+}
+footer header p:nth-child(1){
+    font-size: 32px;
+    font-weight: 400;
+}
+footer header p:nth-child(2){
+    color: rgba(255, 255, 255, 0.432);
+}
+footer .footer-sections{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+footer .logo-section {
+   width: 210px;
+   font-size: 13px;
+    margin-left: 100px;
+    margin-right: 32px;
+}
+footer .menu-section{
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.671);
+}
+
+/* copyright */
+.copyright{
+    border-top: 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/* copyright */
+.copyright{
+    border-top: 1px solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+/* gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.gallery img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.gallery .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.top-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+.description{
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.description .title{
+    font-size: 40px;
+    font-weight: 700;
+}
+.description .places li::marker{
+    content: "•";
+    color: #1be0e7;
+    font-size: 20px;
+
+}
+.description .places li{
+    margin: 0;
+    line-height: 2px;
+}
+/* override on footer */
+.logo-section{
+
+    display: flex;
+    align-items: center;
+}
+/* responsive desgin */
+@media (max-width:600px){
+   .cards {
+    margin: 10px;
+   }
+    .cards .card {
+     width: 400px;
+     height: 400px;
+     
+   }
+   .cards .card img{
+    width: 100%;
+    object-position:  center;
+   }
+   .gallery {
+    padding: 70px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+   }
+}
+@media (max-width:1050px){
+    .bars-container{
+        display: block;
+        margin-left: 15px;
+    }
+    ul.navbar-list{
+        display: none;
+    }
+    .logo {
+        flex: 1;
+    }
+}
